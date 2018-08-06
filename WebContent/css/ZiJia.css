@@ -1,0 +1,27 @@
+﻿body {
+}
+
+/*td {
+    white-space: normal;   
+}*/
+#biaogeneirong {
+    word-break: break-all;
+    word-wrap: break-word;
+    table-layout: fixed;
+    
+}
+    #biaogeneirong tbody tr{
+        height:30px;
+        text-overflow:ellipsis;
+       overflow:hidden;
+    }
+
+#querenbtn {
+    background-color: #3340cc;
+    width: 70px;
+    color: #fff;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    cursor: pointer;
+    border-radius: 3px;
+}

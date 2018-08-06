@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>名片网站</display-name>
+  <welcome-file-list>
+    <welcome-file>/Users/YongHuDengLu.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>userSessionKey</param-name>
+    <param-value>role</param-value>
+  </context-param>
+  <context-param>
+    <param-name>redirectPage</param-name>
+    <param-value>/Users/YongHuDengLu.jsp</param-value>
+  </context-param>
+  <context-param>
+    <param-name>unCheckedUrls</param-name>
+    <param-value>/Users/Login.jsp,/Users/YongHuZhuCe.jsp,/Users/YongHuDengLu.jsp,/checkCode,/getCode,/YongHuZhuCe,/ZhuXiaoDengLu,/YongHuDengLu</param-value>
+  </context-param>
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>Filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/Users/ShouYe1.jsp</url-pattern>
+    <url-pattern>/Users/Show.jsp</url-pattern>
+    <url-pattern>/Users/List1.jsp</url-pattern>
+    <url-pattern>/Users/ChaXunJieGuo.jsp</url-pattern>
+    <url-pattern>/Users/Edit.jsp</url-pattern>
+    <url-pattern>/Users/Add.jsp</url-pattern>
+    <url-pattern>/Users/HuiShouList.jsp</url-pattern>
+    <url-pattern>/Users/YongHuDaoHang.jsp</url-pattern>
+    <url-pattern>/Users/YongHuShow.jsp</url-pattern>
+  </filter-mapping>
+</web-app>
